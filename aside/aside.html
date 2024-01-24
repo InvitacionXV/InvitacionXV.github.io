@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="aside.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <aside class="aside_form">
+        <div class="aside__tick aside_div">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="aside__title aside_div">
+            <p>CONFIRMAR ASISTENCIA</p>
+        </div>
+        <div class="aside__subtitle aside_div">
+            <p> Por favor completá el formulario con tus datos y comentarios para organizar la mejor fiesta</p>
+        </div>
+
+            <form class="aside__form aside_div" action="https://formspree.io/f/mleqgnal" method="POST">
+                
+                <input type="text" class="element_form input_form" id="input" name="name" placeholder="Nombre y Apellido" required>
+            
+                <select id="select" name="select"  class="element_form select_form"  required >
+                    <option value="" disabled selected hidden>Asistirás?</option>
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            
+                <textarea id="comment" class="textarea_form element_form" placeholder="Comentario y Saludos" name="comment" rows="4"></textarea>
+            
+                <button type="submit" class="submit-btn_form ">CONFIRMAR</button>
+            </form>
+
+    </aside>
+
+</body>
+</html>

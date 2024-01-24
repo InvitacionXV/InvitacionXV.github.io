@@ -1,0 +1,163 @@
+.main_container{
+    margin-top: 4em;
+    width: 100%;
+    height: 700px;
+    font-family: 'Metropolis Extra Light',Helvetica,Arial,Lucida,sans-serif;
+
+}
+
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    opacity: 0; /* Configura la opacidad inicial en 0 */
+    transform: translateY(20px); /* Configura una transformación inicial, como un desplazamiento hacia abajo */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Aplica una transición de 0.5 segundos con efecto ease-in-out */
+
+
+}
+
+.container-content.loaded {
+    opacity: 1; /* Configura la opacidad final en 1 cuando la clase 'loaded' se agrega */
+    transform: translateY(0); /* Configura la transformación final en 0 (sin desplazamiento) */
+}
+
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.container-content {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out; /* Aplica la animación de fadeInUp durante 0.5 segundos con efecto ease-in-out */
+  }
+  
+.container-content.loaded {
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación después de completarse */
+  }
+
+
+.content-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-image__background{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-width: 10px;
+    border-top: #000000;
+    margin-bottom: 10px;
+    background-color: #000000;
+}
+
+.logo_image{
+    max-width: 60px;
+    height: auto;
+    background: transparent ;
+
+}
+
+.top-logo_p{
+    font-size: 2em;
+}
+
+.center-span{
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 40%;
+}   
+
+.center-span_img{
+    max-width: 25em;
+    width: auto;
+    height: auto;
+    background: transparent ;
+
+}
+
+.text-data__container{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1.3em;
+    
+}
+
+.text_data__span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-align: center;
+}
+
+.text-data__data_title{
+    align-items: baseline;
+}
+
+.img__vestimenta{
+    max-width: 7em;
+}
+
+.main-link_container{
+    width: auto;
+    height: auto;
+    margin: 5em;
+
+}
+
+.main-link__a{
+    color: #ffffff!important;
+    border-width: 4px!important;
+    border-color: #000000;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Metropolis Extra Light',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    background-color: #000000;
+    padding: 15px;
+    text-decoration: none;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block; /* Agrega esta línea */
+}
+
+.main-link__a:hover{
+    transform: scale(1.1);
+}
+
+.icon-ubication{
+    color: white;
+    font-size: 1em;
+}

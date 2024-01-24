@@ -1,0 +1,147 @@
+.aside_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Metropolis Extra Light',Helvetica,Arial,Lucida,sans-serif!important;
+
+}
+
+.aside_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside__tick{
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.aside__tick i {
+    color: white;
+    font-size: 40px;
+}
+
+.aside__title{
+
+    width: 50%;
+    height: 10%;
+    margin: 1%;
+}
+
+.aside__title p{
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+
+}
+
+.aside__subtitle{
+    width: 90%;
+    height: 7%;
+}
+
+.aside__subtitle p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.aside__form{
+    display: grid;
+    width: 90%;
+    max-width: 700px;
+    height: 30%;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;  
+    margin-top: 2em;
+}
+
+.element_form{
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline:none;                 
+    font-size: 15px;  
+}
+
+.element_form:focus {
+    border: 2px solid cornflowerblue; /* Borde azul al estar enfocado */
+}
+
+.input_form{
+    grid-column: 1/3;
+}
+
+.select_form{
+    height: 100%;
+    width: auto ;
+
+}
+
+.textarea_form{
+    grid-column: 1/4;
+    height: 10em;
+    min-height: 100px;
+}
+
+.submit-btn_form{
+    font-size: 14px;
+    width: auto;
+    grid-column: 3/4;
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; /* Color de fondo inicial */
+    color: #000000; /* Color de texto inicial */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 3px;
+    justify-self: end;
+    font-weight: 700;
+    padding: 10px 25px;
+    outline:none;   
+}
+
+.submit-btn_form:hover {
+    background-color: #000000; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Color de texto al pasar el cursor */
+}   
+
+@media (max-width: 600px) {
+    
+    .aside__subtitle{
+        width: auto;
+    }
+    
+    .aside__subtitle{
+        width: 85%;
+    }
+
+    .aside__form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 2em;
+        height: auto;
+    }
+
+    .element_form{
+        width: 100%;
+    }
+
+    .select_form ,.input_form{   
+        height: 40px;
+    }
+    .submit-btn_form{
+        font-size: 12px;
+        align-self: flex-end;   
+    }
+
+}
