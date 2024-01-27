@@ -1,8 +1,8 @@
 // cuentaRegresiva.js
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Fecha objetivo: 2 de marzo de 2024 a las 21:00 (9 PM)
-    var fechaObjetivo = new Date('March 2, 2024 21:00:00').getTime();
+    // Fecha objetivo: 30 de marzo de 2024 a las 21:00 (9 PM)
+    var fechaObjetivo = new Date('March 30, 2024 21:00:00').getTime();
 
     // Actualizar la cuenta regresiva cada segundo
     var x = setInterval(function () {

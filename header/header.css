@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +17,15 @@ body {
     background: url('../static/3.jpg') no-repeat center center fixed;
     background-size: cover;
     filter: brightness(0.7);
+}
+
+
+.content-title_name {
+    font-size: 70px;
+    color: white;
+    font-family: 'Lobster', handwriting;
+    letter-spacing: 10px; /* Ajusta el espaciado entre caracteres */
+    line-height: 1.2; /* Ajusta la altura de la línea según sea necesario */
 }
 
 .header_container {
